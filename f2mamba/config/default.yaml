@@ -1,0 +1,31 @@
+dataset:
+
+  train_images: ""
+  train_masks: ""
+
+  val_images: ""
+  val_masks: ""
+
+training:
+
+  image_size: 512
+
+  batch_size: 4
+
+  num_workers: 2
+
+  pin_memory: true
+
+  epochs: 5
+
+optimizer:
+
+  lr: 0.0001
+
+  weight_decay: 0.0001
+
+model:
+
+  encoder: fg_mamba
+
+  decoder: mask2former
